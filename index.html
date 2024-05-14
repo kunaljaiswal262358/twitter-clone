@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="text-white bg-black">
+    <div class="flex justify-center lg:w-[1324px] m-auto ">
+        <div class=" first sm:block hidden lg:w-[20%] ">
+            <div class="side-bar bg-black flex flex-col  sticky top-0">
+
+                <ul class="flex flex-col  text-gray-100 ">
+                    <li class="p-3 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6] mt-3">
+                        <span class="log invert flex ">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"
+                                class="w-10 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                                <g>
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="flex gap-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-3 pr-5">
+                        <i class=" text-3xl fa-solid fa-house"></i>
+                        <span class=" hidden lg:block text-2xl font-medium">Home</span>
+                    </li>
+                    <li class="flex gap-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-3 pr-5">
+                        <i class="text-3xl fa-solid fa-magnifying-glass"></i>
+                        <span class=" hidden lg:block text-2xl font-medium">Explore</span>
+                    </li>
+                    <li class="flex gap-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-3 pr-5">
+                        <i class="text-3xl fa-regular fa-bell"></i>
+                        <span class="hidden lg:block text-2xl font-medium">Notification</span>
+                    </li>
+                    <li class="flex gap-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-3 pr-5">
+                        <i class="text-3xl fa-regular fa-message"></i>
+                        <span class="hidden lg:block text-2xl font-medium">Messages</span>
+                    </li>
+                    <li class="flex gap-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-3 pr-5">
+                        <i class="text-3xl fa-regular fa-square"></i>
+                        <span class="hidden lg:block text-2xl font-medium">Grok</span>
+                    </li>
+                    <li class="flex gap-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-3 pr-5">
+                        <i class="text-3xl fa-regular fa-rectangle-list"></i>
+                        <span class="hidden lg:block text-2xl font-medium">Lists</span>
+                    </li>
+                    <li class="flex gap-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-3 pr-5">
+                        <i class="text-3xl fa-solid fa-face-smile"></i>
+                        <span class="hidden lg:block text-2xl font-medium">Communities</span>
+                    </li>
+                    <li class="flex gap-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-3 pr-5">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class=" invert w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                            <g>
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </g>
+                        </svg>
+                        <span class="hidden lg:block text-2xl font-medium">Premium</span>
+                    </li>
+                    <li class="flex gap-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-3 pr-5">
+                        <i class="text-3xl fa-solid fa-user"></i>
+                        <span class="hidden lg:block text-2xl font-medium">Profile</span>
+                    </li>
+                    <li class="flex gap-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-3 pr-5">
+                        <i class="text-3xl fa-solid fa-circle-info"></i>
+                        <span class="hidden lg:block text-2xl font-medium">More</span>
+                    </li>
+                </ul>
+
+                <div class="post-btn flex rounded-full justify-center bg-[#1d9bf0] hover:bg-[#1d80f0] w-3/5 my-4 mx-4 ">
+                    <button class="lg:block hidden   my-3">Post</button>
+                    <i class="lg:hidden block p-3 fa-solid fa-pen"></i>
+                </div>
+
+                <div class="profile lg:flex hidden gap-3 my-4 hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]  px-3 py-2 pr-5  ">
+                    <div class="image flex items-center">
+                        <img class="rounded-full w-10 "
+                            src="https://pbs.twimg.com/profile_images/1675803903533694977/ghS4hUrK_bigger.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div>Kunal Jaiswal</div>
+                        <div>@KunalJaiswal48564</div>
+                    </div>
+                    <div class="dot">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line w-px bg-gray-600 "></div>
+
+        <div class=" second w-[690px] max-md:w-full lg:w-[55%]">
+            <div class="top flex items-center justify-around text-base sticky top-0 ml-[1px] bg-black " >
+                <div class=" flex justify-center items-center for-you font-bold relative hover:cursor-pointer hover:bg-[#202327d6] w-full py-4">
+                    <span class="">For You</span>
+                    <div class="underline w-16 rounded-full h-1 bg-blue-600 absolute top-14"></div>
+                </div>
+                <div class="following flex justify-center items-center text-gray-500 hover:cursor-pointer hover:bg-[#202327d6] w-full py-4">
+                    <span class="s">Following</span>
+                </div>
+                <div class="setting-icon flex justify-center items-center p-2 h-[30px] hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6]">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+            <div class="divider w-full h-[1px] bg-gray-500 sticky top-[60px]"> </div>
+
+            <div class="create-post flex gap-3 m-4">
+                <div class="image flex items-center">
+                    <img class="rounded-full w-10 hover:cursor-pointer"
+                        src="https://pbs.twimg.com/profile_images/1675803903533694977/ghS4hUrK_bigger.png" alt="">
+                </div>
+                <!-- <span class="text-xl text-gray-500 my-2">What is happening?!</span> -->
+                <input class="text-xl text-gray-500 my-2 bg-black outline-0" type="text" placeholder="What’s happening">
+            </div>
+            <div class="icons flex justify-between mx-4 my-3 ">
+                <div class="icon flex gap-2  text-[#1d9bf0] items-center ml-10">
+                    <i class=" hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6] flex items-center justify-center w-7 h-7 fa-solid fa-house"></i>
+                    <i class=" hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6] flex items-center justify-center w-7 h-7 fa-regular fa-square"></i>
+                    <i class=" hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6] flex items-center justify-center w-7 h-7 fa-solid fa-grip-lines"></i>
+                    <i class=" hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6] flex items-center justify-center w-7 h-7 fa-solid fa-face-smile"></i>
+                    <i class=" hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6] flex items-center justify-center w-7 h-7 fa-solid fa-floppy-disk"></i>
+                    <i class=" hover:rounded-full hover:cursor-pointer hover:bg-[#202327d6] flex items-center justify-center w-7 h-7 fa-solid fa-location-dot"></i>
+                </div>
+                <div class="post-btn flex rounded-full bg-[#1d9bf0] ">
+                    <button class="px-4 my-1">Post</button>
+                </div>
+            </div>
+            <div class="divider w-full h-[1px] bg-gray-500"> </div>
+
+            <div class=" hover:cursor-pointer hover:bg-[#20232765] show-btn text-blue-500 py-4 flex justify-center">
+                <span>show more 45 posts</span>
+            </div>
+
+            <div class="divider w-full h-[1px] bg-gray-500"> </div>
+
+            <div class="posts-by-user ">
+
+                <div class="created-posts p-4 flex gap-3 hover:cursor-pointer hover:bg-[#20232727]">
+                    <div class="profile-image ">
+                        <img class="w-[40px]  rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1675803903533694977/ghS4hUrK_bigger.png" alt="">
+                    </div>
+                    <div class="about-person">
+                        <div class="">
+                            <span class="font-bold">Rishabh Yadav</span>
+                            <span class="text-gray-500">@Rishabhji1200 ·18h</span>
+                        </div>
+                        <div class="">
+                            <span>अमित शाह जी लखनऊ आए हैं मंथन करने और एक जरूरी शख्स गायब हैं।
+                                नाम बताएं आप लोग?</span>
+                        </div>
+                        <div class="posted-image flex items-start">
+                            <img class="border border-gray-500 rounded-lg"
+                                src="https://cdn.narendramodi.in/cmsuploads/0.89801200_1639141921_1.jpg" alt="">
+                        </div>
+                        <div class="photo-icons flex justify-between mt-4 text-gray-500">
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-comment"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-green-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-share-from-square"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-pink-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-heart"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800  hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-solid fa-arrow-up-right-from-square"></i>
+                            <div class="flex gap-5">
+                                <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-bookmark"></i>
+                                <i class=" hover:rounded-full hover:cursor-pointer  hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider w-full h-[1px] bg-gray-500"> </div>
+
+                <div class="created-posts p-4 flex gap-3 hover:cursor-pointer hover:bg-[#20232727]">
+                    <div class="profile-image">
+                        <img class="w-[40px]  rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1780044485541699584/p78MCn3B_bigger.jpg" alt="">
+                    </div>
+                    <div class="about-person w-full">
+                        <div class="">
+                            <span class="font-bold">Elon Musk</span>
+                            <span class="text-gray-500"> @elonmusk·Apr 26</span>
+                        </div>
+                        <div class="">
+                            <span>Absolutely true!
+                                
+                                “The evidence is overwhelming that the majority of people on the street are there because of untreated mental illness or addiction, which leads people to use all their money to support their drug habit and be high, rather than work.”</span>
+                        </div>
+                        <div class="posted-image flex items-start">
+                            <img class="border border-gray-500 rounded-lg"
+                                src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/2400x1600/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/23906794/VRG_Illo_STK022_K_Radtke_Musk_Bolts.jpg" alt="">
+                        </div>
+                        <div class="photo-icons flex justify-between mt-4 text-gray-500">
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-comment"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-green-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-share-from-square"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-pink-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-heart"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800  hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-solid fa-arrow-up-right-from-square"></i>
+                            <div class="flex gap-5">
+                                <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-bookmark"></i>
+                                <i class=" hover:rounded-full hover:cursor-pointer  hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider w-full h-[1px] bg-gray-500"> </div>
+
+                <div class="created-posts p-4 flex gap-3 hover:cursor-pointer hover:bg-[#20232727]">
+                    <div class="profile-image ">
+                        <img class="w-[40px]  rounded-full"
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg" alt="">
+                    </div>
+                    <div class="about-person">
+                        <div class="">
+                            <span class="font-bold">Mahatma Gandhi</span>
+                            <span class="text-gray-500">@MahatmaGandhi531 .75y</span>
+                        </div>
+                        <div class="">
+                            <span>We are independent now.
+                                enjoy guys!
+                            </span>
+                        </div>
+                        <div class="posted-image flex items-start">
+                            <img class="border border-gray-500 rounded-lg"
+                                src="https://m.media-amazon.com/images/I/712Pnx73P8L._AC_UF1000,1000_QL80_.jpg" alt="">
+                        </div>
+                        <div class="photo-icons flex justify-between mt-4 text-gray-500">
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-comment"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-green-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-share-from-square"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-pink-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-heart"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800  hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-solid fa-arrow-up-right-from-square"></i>
+                            <div class="flex gap-5">
+                                <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-bookmark"></i>
+                                <i class=" hover:rounded-full hover:cursor-pointer  hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider w-full h-[1px] bg-gray-500"> </div>
+
+                <div class="created-posts p-4 flex gap-3 hover:cursor-pointer hover:bg-[#20232727]">
+                    <div class="profile-image ">
+                        <img class="w-[40px]  rounded-full"
+                            src="image/IMG_20240416_112639.jpg" alt="">
+                    </div>
+                    <div class="about-person">
+                        <div class="">
+                            <span class="font-bold">Kunal Jaiswal</span>
+                            <span class="text-gray-500">@KunalJaiswal48564 ·18h</span>
+                        </div>
+                        <div class="">
+                            <span>Today , I am very happy!</span>
+                        </div>
+                        <div class="posted-image flex items-start">
+                            <img class="border border-gray-500 rounded-lg"
+                                src="image/IMG_20240416_112639.jpg" alt="">
+                        </div>
+                        <div class="photo-icons flex justify-between mt-4 text-gray-500">
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-comment"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-green-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-share-from-square"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-pink-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-heart"></i>
+                            <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800  hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-solid fa-arrow-up-right-from-square"></i>
+                            <div class="flex gap-5">
+                                <i class=" hover:rounded-full hover:cursor-pointer hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-regular fa-bookmark"></i>
+                                <i class=" hover:rounded-full hover:cursor-pointer  hover:text-blue-800 hover:bg-[#20232727] flex items-center justify-center  w-7 h-7 fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line w-px bg-gray-600"></div>
+
+        <div class=" lg:w-[30%] third hidden lg:block">
+            <div class="right-sidebar sticky top-[-480px]">
+                <div class="search p-2 px-4 mx-5 my-1 rounded-full flex gap-3 text-gray-500 bg-[#202327] sticky top-1">
+                    <i class="text-xl fa-solid fa-magnifying-glass"></i>
+                    <input class="outline-0 bg-[#202327] w-full" type="text" name="" id="" placeholder="Search">
+                </div>
+
+                <div class="subscribe mx-5 my-2  border border-gray-600 p-4 rounded-xl flex flex-col gap-2">
+                    <h2 class="font-bold text-xl">Subscribe to Premium</h2>
+                    <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                    <div class="subs-btn flex rounded-full bg-[#1d9bf0] hover:bg-[#1d85f0] hover:cursor-pointer w-2/6 justify-center">
+                        <button class=" my-2">Subscribe</button>
+                    </div>
+                </div>
+
+                <div
+                    class="what-happening mx-5 border border-gray-600 pt-4 rounded-xl flex flex-col justify-between gap-3">
+                    <h2 class="px-5 font-bold text-xl mb-4">What’s happening</h2>
+
+                    <div class="trends flex justify-between hover:cursor-pointer hover:bg-[#2023275e] px-5">
+                        <div>
+                            <p class="text-gray-600 text-sm">Politics · Trending</p>
+                            <p>#ModiMaafiMaango</p>
+                            <p class="text-gray-600 text-sm">50.6K posts</p>
+                        </div>
+                        <p class="self-center">...</p>
+                    </div>
+                    <div class="trends flex justify-between hover:cursor-pointer hover:bg-[#2023275e] px-5">
+                        <div>
+                            <p class="text-gray-600 text-sm">Trending in India</p>
+                            <p>#cbseresults2024</p>
+                            <p class="text-gray-600 text-sm">1,190 posts</p>
+                        </div>
+                        <p class="self-center">...</p>
+                    </div>
+                    <div class="trends flex justify-between hover:cursor-pointer hover:bg-[#2023275e] px-5">
+                        <div>
+                            <p class="text-gray-600 text-sm">Sports · Trending</p>
+                            <p>Sixers</p>
+                            <p class="text-gray-600 text-sm">72.9K posts</p>
+                        </div>
+                        <p class="self-center">...</p>
+                    </div>
+                    <div class="trends flex justify-between hover:cursor-pointer hover:bg-[#2023275e] px-5">
+                        <div>
+                            <p class="text-gray-600 text-sm">Politics · Trending</p>
+                            <p>Turkey</p>
+                            <p class="text-gray-600 text-sm">75.9K posts</p>
+                        </div>
+                        <p class="self-center">...</p>
+                    </div>
+                    <div class="trends flex justify-between hover:cursor-pointer hover:bg-[#2023275e] px-5">
+                        <div>
+                            <p class="text-gray-600 text-sm">Politics · Trending</p>
+                            <p>#RahulGandhi</p>
+                            <p class="text-gray-600 text-sm">Trending with स्मृति ईरानी, Amethi</p>
+                        </div>
+                        <p class="self-center">...</p>
+                    </div>
+                    <div class="trends flex justify-between hover:cursor-pointer hover:bg-[#2023275e] px-5">
+                        <div>
+                            <p class="text-gray-600 text-sm">Entertainment · Trending</p>
+                            <p>#RaashiKhanna</p>
+                            <p class="text-gray-600 text-sm">Trending with #Aranmanai4, #Baak</p>
+                        </div>
+                        <p class="self-center">...</p>
+                    </div>
+                    <div class=" px-5 py-4 show-more hover:cursor-pointer hover:bg-[#2023275e] text-blue-500">show more</div>
+                </div>
+
+                <div class="who-to-follow mx-5 my-2  border border-gray-600 rounded-xl flex flex-col">
+                    <h2 class=" px-5 pt-3 font-bold text-xl">Who to Follow</h2>
+                    <div class="profile flex justify-between hover:cursor-pointer hover:bg-[#2023275e] p-3">
+                        <div class="image flex items-center">
+                            <img class="rounded-full w-10 "
+                                src="https://pbs.twimg.com/profile_images/1604943357750419465/wk5BAmKG_bigger.png"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div>SportsCenter</div>
+                            <div>@SportsCenter</div>
+                        </div>
+                        <div class="follow-btn flex   text-black  justify-center">
+                            <button class=" bg-white rounded-full px-6 h-9 font-bold self-center">Follow</button>
+                        </div>
+                    </div>
+                    <div class="profile flex justify-between hover:cursor-pointer hover:bg-[#2023275e] p-3">
+                        <div class="image flex items-center">
+                            <img class="rounded-lg w-10 "
+                                src="	https://pbs.twimg.com/profile_images/1774965180784324608/BT-_f00R_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div>NBC Sports</div>
+                            <div>@NBCSports</div>
+                        </div>
+                        <div class="follow-btn flex   text-black  justify-center">
+                            <button class=" bg-white rounded-full px-6 h-9 font-bold self-center">Follow</button>
+                        </div>
+                    </div>
+                    <div class="profile flex justify-between hover:cursor-pointer hover:bg-[#2023275e] p-3">
+                        <div class="image flex items-center">
+                            <img class="rounded-full w-10 "
+                                src="https://pbs.twimg.com/profile_images/1743999324751835136/PayDu7ZO_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div>पंकज मिश्रा</div>
+                            <div>@misrapankaja2</div>
+                        </div>
+                        <div class="follow-btn flex  text-black  justify-center">
+                            <button class=" bg-white rounded-full px-6 h-9 font-bold self-center">Follow</button>
+                        </div>
+                    </div>
+                    <div class="hover:cursor-pointer hover:bg-[#2023275e] py-2 px-5 show-more text-blue-500">show more</div>
+                </div>
+                <div class="terms flex flex-wrap gap-2 mx-5  text-gray-500 text-xs ">
+                    <span class="hover:underline">Terms of Service</span>
+                    <span class="hover:underline">Privacy Policy</span>
+                    <span class="hover:underline">Cookie Policy</span>
+                    <span class="hover:underline">Accessibility</span>
+                    <span class="hover:underline">Ads info</span>
+                    <span class="hover:underline">More</span>
+                    <span class="hover:underline">© 2024 X Corp.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
